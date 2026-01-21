@@ -692,7 +692,7 @@
                 </a>
             </div>
             <h1>Brand Awareness KPI Dashboard</h1>
-            <p>January-September 2025 Performance Analysis</p>
+            <p>Full Year 2025 Performance Analysis</p>
         </div>
     </header>
     
@@ -872,116 +872,153 @@
     
     <!-- CSV Data -->
     <script>
-        // CSV data as a string to avoid CORS issues
+        // CSV data embedded directly in the HTML
         const csvData = `Key,Initiative Cards,Sub Initiative,Metric,Month,Actual,Forecast,YTD Actual Totals,YTD Forecast Totals
 Initiative Cards-Brand Awareness T1-Impressions-January,Initiative Cards,Brand Awareness T1,Impressions,January,"991,848,138.00","706,890,444.57","991,848,138.00","706,890,444.57"
 Initiative Cards-Brand Awareness T1-Impressions-February,Initiative Cards,Brand Awareness T1,Impressions,February,"567,333,002.00","562,893,716.42","1,559,181,140.00","1,269,784,160.99"
 Initiative Cards-Brand Awareness T1-Impressions-March,Initiative Cards,Brand Awareness T1,Impressions,March,"1,181,770,270.00","968,147,617.86","2,740,951,410.00","2,237,931,778.85"
 Initiative Cards-Brand Awareness T1-Impressions-April,Initiative Cards,Brand Awareness T1,Impressions,April,"1,108,240,166.00","723,410,692.86","3,849,191,576.00","2,961,342,471.71"
 Initiative Cards-Brand Awareness T1-Impressions-May,Initiative Cards,Brand Awareness T1,Impressions,May,"1,540,490,634.00","1,390,043,334.86","5,389,682,210.00","4,351,385,806.57"
-Initiative Cards-Brand Awareness T1-Impressions-June,Initiative Cards,Brand Awareness T1,Impressions,June,"1,899,231,459.00","2,090,832,718.00","7,288,913,669.00","6,442,218,524.57"
-Initiative Cards-Brand Awareness T1-Impressions-July,Initiative Cards,Brand Awareness T1,Impressions,July,"2,573,490,998.00","1,388,286,468.00","9,862,404,667.00","7,830,504,992.57"
-Initiative Cards-Brand Awareness T1-Impressions-August,Initiative Cards,Brand Awareness T1,Impressions,August,"2,966,403,642.00","2,427,855,087.00","12,828,808,309.00","10,258,360,079.57"
+Initiative Cards-Brand Awareness T1-Impressions-June,Initiative Cards,Brand Awareness T1,Impressions,June,"1,899,231,459.00","1,996,696,754.00","7,288,913,669.00","6,348,082,560.57"
+Initiative Cards-Brand Awareness T1-Impressions-July,Initiative Cards,Brand Awareness T1,Impressions,July,"2,573,490,998.00","1,482,422,433.00","9,862,404,667.00","7,830,504,993.57"
+Initiative Cards-Brand Awareness T1-Impressions-August,Initiative Cards,Brand Awareness T1,Impressions,August,"2,966,403,642.00","2,427,855,087.00","12,828,808,309.00","10,258,360,080.57"
 Initiative Cards-Brand Awareness T1-Impressions-September,Initiative Cards,Brand Awareness T1,Impressions,September,"347,329,918.00","358,411,970.00","13,176,138,227.00","10,616,772,050.57"
-Initiative Cards-Brand Awareness T1-Impressions-October,Initiative Cards,Brand Awareness T1,Impressions,October,0,2522698037,7288913669,14313119356
-Initiative Cards-Brand Awareness T1-Impressions-November,Initiative Cards,Brand Awareness T1,Impressions,November,0,2987908930,7288913669,17301028286
-Initiative Cards-Brand Awareness T1-Impressions-December,Initiative Cards,Brand Awareness T1,Impressions,December,0,2343677252,7288913669,19644705538
-Initiative Cards-Brand Awareness T1-Engagement-January,Initiative Cards,Brand Awareness T1,Engagement,January,267199057,197448701.8,267199057,197448701.8
-Initiative Cards-Brand Awareness T1-Engagement-February,Initiative Cards,Brand Awareness T1,Engagement,February,136898146,143217023.8,404097203,340665725.6
-Initiative Cards-Brand Awareness T1-Engagement-March,Initiative Cards,Brand Awareness T1,Engagement,March,199895207,124841766.1,603992410,465507491.7
-Initiative Cards-Brand Awareness T1-Engagement-April,Initiative Cards,Brand Awareness T1,Engagement,April,75108140,50969754.06,679100550,516477245.8
-Initiative Cards-Brand Awareness T1-Engagement-May,Initiative Cards,Brand Awareness T1,Engagement,May,155287797,141584085.1,834388347,658061330.8
-Initiative Cards-Brand Awareness T1-Engagement-June,Initiative Cards,Brand Awareness T1,Engagement,June,545456116,436390955,1379844463,1094452286
-Initiative Cards-Brand Awareness T1-Engagement-July,Initiative Cards,Brand Awareness T1,Engagement,July,"405,764,411.00","278,978,210.00","1,785,608,874.00","1,373,430,495.81"
-Initiative Cards-Brand Awareness T1-Engagement-August,Initiative Cards,Brand Awareness T1,Engagement,August,"582,744,328.00","356,439,909.00","2,368,353,202.00","1,729,870,404.81"
+Initiative Cards-Brand Awareness T1-Impressions-October,Initiative Cards,Brand Awareness T1,Impressions,October,"2,782,649,340.00","2,921,941,136.00","15,958,787,567.00","13,538,713,186.57"
+Initiative Cards-Brand Awareness T1-Impressions-November,Initiative Cards,Brand Awareness T1,Impressions,November,"3,033,779,679.00","3,818,084,127.00","18,992,567,246.00","17,356,797,313.57"
+Initiative Cards-Brand Awareness T1-Impressions-December,Initiative Cards,Brand Awareness T1,Impressions,December,"3,338,896,844.00","2,271,401,528.00","22,331,464,090.00","19,628,198,841.57"
+Initiative Cards-Brand Awareness T1-Engagement-January,Initiative Cards,Brand Awareness T1,Engagement,January,"267,199,057.00","197,448,701.81","267,199,057.00","197,448,701.81"
+Initiative Cards-Brand Awareness T1-Engagement-February,Initiative Cards,Brand Awareness T1,Engagement,February,"136,898,146.00","143,217,023.81","404,097,203.00","340,665,725.62"
+Initiative Cards-Brand Awareness T1-Engagement-March,Initiative Cards,Brand Awareness T1,Engagement,March,"199,895,207.00","124,841,766.06","603,992,410.00","465,507,491.68"
+Initiative Cards-Brand Awareness T1-Engagement-April,Initiative Cards,Brand Awareness T1,Engagement,April,"75,108,140.00","50,969,754.06","679,100,550.00","516,477,245.75"
+Initiative Cards-Brand Awareness T1-Engagement-May,Initiative Cards,Brand Awareness T1,Engagement,May,"155,287,797.00","141,584,085.06","834,388,347.00","658,061,330.81"
+Initiative Cards-Brand Awareness T1-Engagement-June,Initiative Cards,Brand Awareness T1,Engagement,June,"545,456,116.00","424,030,655.00","1,379,844,463.00","1,082,091,985.81"
+Initiative Cards-Brand Awareness T1-Engagement-July,Initiative Cards,Brand Awareness T1,Engagement,July,"405,764,411.00","291,338,509.00","1,785,608,874.00","1,373,430,494.81"
+Initiative Cards-Brand Awareness T1-Engagement-August,Initiative Cards,Brand Awareness T1,Engagement,August,"582,744,328.00","356,439,909.00","2,368,353,202.00","1,729,870,403.81"
 Initiative Cards-Brand Awareness T1-Engagement-September,Initiative Cards,Brand Awareness T1,Engagement,September,"65,819,873.00","61,316,365.00","2,434,173,075.00","1,791,186,768.81"
-Initiative Cards-Brand Awareness T1-Engagement-October,Initiative Cards,Brand Awareness T1,Engagement,October,0,483774675,1379844463,2620212218
-Initiative Cards-Brand Awareness T1-Engagement-November,Initiative Cards,Brand Awareness T1,Engagement,November,0,720460068,1379844463,3340672286
-Initiative Cards-Brand Awareness T1-Engagement-December,Initiative Cards,Brand Awareness T1,Engagement,December,0,520641002,1379844463,3861313288
-Initiative Cards-Brand Awareness T1-Paid Sessions-January,Initiative Cards,Brand Awareness T1,Paid Sessions,January,1747492,1357120.58,1747492,1357120.58
-Initiative Cards-Brand Awareness T1-Paid Sessions-February,Initiative Cards,Brand Awareness T1,Paid Sessions,February,1863637,1804640.037,3611129,3161760.62
-Initiative Cards-Brand Awareness T1-Paid Sessions-March,Initiative Cards,Brand Awareness T1,Paid Sessions,March,4516549,3713795.654,8127678,6875556.27
-Initiative Cards-Brand Awareness T1-Paid Sessions-April,Initiative Cards,Brand Awareness T1,Paid Sessions,April,4639386,2709638.654,12767064,9585194.93
-Initiative Cards-Brand Awareness T1-Paid Sessions-May,Initiative Cards,Brand Awareness T1,Paid Sessions,May,6264491,4023303.654,19031555,13608498.58
-Initiative Cards-Brand Awareness T1-Paid Sessions-June,Initiative Cards,Brand Awareness T1,Paid Sessions,June,7416750,3911972,26448305,17520470.58
-Initiative Cards-Brand Awareness T1-Paid Sessions-July,Initiative Cards,Brand Awareness T1,Paid Sessions,July,"10,195,829.00","3,095,003.00","36,644,134.00","20,615,473.58"
-Initiative Cards-Brand Awareness T1-Paid Sessions-August,Initiative Cards,Brand Awareness T1,Paid Sessions,August,"8,048,113.00","2,635,131.00","44,692,247.00","23,250,604.58"
-Initiative Cards-Brand Awareness T1-Paid Sessions-September,Initiative Cards,Brand Awareness T1,Paid Sessions,September,"1,198,610.00","1,243,972.00","45,890,857.00","24,477,853.58"
-Initiative Cards-Brand Awareness T1-Paid Sessions-October,Initiative Cards,Brand Awareness T1,Paid Sessions,October,0,7983194,26448305,40270066.58
-Initiative Cards-Brand Awareness T1-Paid Sessions-November,Initiative Cards,Brand Awareness T1,Paid Sessions,November,0,8814259,26448305,49084325.58
-Initiative Cards-Brand Awareness T1-Paid Sessions-December,Initiative Cards,Brand Awareness T1,Paid Sessions,December,0,7602302,26448305,56686627.58
-Initiative Cards-Brand Awareness UAE-Impressions-January,Initiative Cards,Brand Awareness UAE,Impressions,January,73885995,85175667.27,73885995,85175667.27
-Initiative Cards-Brand Awareness UAE-Impressions-February,Initiative Cards,Brand Awareness UAE,Impressions,February,50166858,52051796.66,124052853,137227463.9
-Initiative Cards-Brand Awareness UAE-Impressions-March,Initiative Cards,Brand Awareness UAE,Impressions,March,62742320,53006877.66,186795173,190234341.6
-Initiative Cards-Brand Awareness UAE-Impressions-April,Initiative Cards,Brand Awareness UAE,Impressions,April,21764219,13424870,208559392,203659211.6
-Initiative Cards-Brand Awareness UAE-Impressions-May,Initiative Cards,Brand Awareness UAE,Impressions,May,83109611,106774240,291669003,310433451.6
-Initiative Cards-Brand Awareness UAE-Impressions-June,Initiative Cards,Brand Awareness UAE,Impressions,June,183384613,112666568,475053616,423100019.6
+Initiative Cards-Brand Awareness T1-Engagement-October,Initiative Cards,Brand Awareness T1,Engagement,October,"563,425,104.00","539,098,643.00","2,997,598,179.00","2,330,285,411.81"
+Initiative Cards-Brand Awareness T1-Engagement-November,Initiative Cards,Brand Awareness T1,Engagement,November,"569,652,266.00","916,361,734.00","3,567,250,445.00","3,246,647,145.81"
+Initiative Cards-Brand Awareness T1-Engagement-December,Initiative Cards,Brand Awareness T1,Engagement,December,"613,277,695.00","388,935,208.00","4,180,528,140.00","3,635,582,353.81"
+Initiative Cards-Brand Awareness T1-Paid Sessions-January,Initiative Cards,Brand Awareness T1,Paid Sessions,January,"1,747,492.00","1,357,120.58","1,747,492.00","1,357,120.58"
+Initiative Cards-Brand Awareness T1-Paid Sessions-February,Initiative Cards,Brand Awareness T1,Paid Sessions,February,"1,863,637.00","1,804,640.04","3,611,129.00","3,161,760.62"
+Initiative Cards-Brand Awareness T1-Paid Sessions-March,Initiative Cards,Brand Awareness T1,Paid Sessions,March,"4,516,549.00","3,713,795.65","8,127,678.00","6,875,556.27"
+Initiative Cards-Brand Awareness T1-Paid Sessions-April,Initiative Cards,Brand Awareness T1,Paid Sessions,April,"4,639,386.00","2,709,638.65","12,767,064.00","9,585,194.93"
+Initiative Cards-Brand Awareness T1-Paid Sessions-May,Initiative Cards,Brand Awareness T1,Paid Sessions,May,"6,264,491.00","4,236,427.65","19,031,555.00","13,821,622.58"
+Initiative Cards-Brand Awareness T1-Paid Sessions-June,Initiative Cards,Brand Awareness T1,Paid Sessions,June,"7,416,750.00","3,928,694.00","26,448,305.00","17,750,316.58"
+Initiative Cards-Brand Awareness T1-Paid Sessions-July,Initiative Cards,Brand Awareness T1,Paid Sessions,July,"10,195,829.00","2,865,156.00","36,644,134.00","20,615,472.58"
+Initiative Cards-Brand Awareness T1-Paid Sessions-August,Initiative Cards,Brand Awareness T1,Paid Sessions,August,"8,048,113.00","2,635,131.00","44,692,247.00","23,250,603.58"
+Initiative Cards-Brand Awareness T1-Paid Sessions-September,Initiative Cards,Brand Awareness T1,Paid Sessions,September,"1,198,610.00","1,243,972.00","45,890,857.00","24,494,575.58"
+Initiative Cards-Brand Awareness T1-Paid Sessions-October,Initiative Cards,Brand Awareness T1,Paid Sessions,October,"13,473,075.00","10,908,933.00","59,363,932.00","35,403,508.58"
+Initiative Cards-Brand Awareness T1-Paid Sessions-November,Initiative Cards,Brand Awareness T1,Paid Sessions,November,"13,379,259.00","12,101,361.00","72,743,191.00","47,504,869.58"
+Initiative Cards-Brand Awareness T1-Paid Sessions-December,Initiative Cards,Brand Awareness T1,Paid Sessions,December,"12,814,604.00","10,949,763.00","85,557,795.00","58,454,632.58"
+Initiative Cards-Brand Awareness UAE-Impressions-January,Initiative Cards,Brand Awareness UAE,Impressions,January,"73,885,995.00","85,175,667.27","73,885,995.00","85,175,667.27"
+Initiative Cards-Brand Awareness UAE-Impressions-February,Initiative Cards,Brand Awareness UAE,Impressions,February,"50,166,858.00","52,051,796.66","124,052,853.00","137,227,463.93"
+Initiative Cards-Brand Awareness UAE-Impressions-March,Initiative Cards,Brand Awareness UAE,Impressions,March,"62,742,320.00","53,006,877.66","186,795,173.00","190,234,341.59"
+Initiative Cards-Brand Awareness UAE-Impressions-April,Initiative Cards,Brand Awareness UAE,Impressions,April,"21,764,219.00","13,424,870.00","208,559,392.00","203,659,211.59"
+Initiative Cards-Brand Awareness UAE-Impressions-May,Initiative Cards,Brand Awareness UAE,Impressions,May,"83,109,611.00","106,774,240.00","291,669,003.00","310,433,451.59"
+Initiative Cards-Brand Awareness UAE-Impressions-June,Initiative Cards,Brand Awareness UAE,Impressions,June,"183,384,613.00","112,666,568.00","475,053,616.00","423,100,019.59"
 Initiative Cards-Brand Awareness UAE-Impressions-July,Initiative Cards,Brand Awareness UAE,Impressions,July,"215,926,236.00","112,666,568.00","690,979,852.00","535,766,587.59"
 Initiative Cards-Brand Awareness UAE-Impressions-August,Initiative Cards,Brand Awareness UAE,Impressions,August,"183,407,005.00","103,692,146.00","874,386,857.00","639,458,733.59"
 Initiative Cards-Brand Awareness UAE-Impressions-September,Initiative Cards,Brand Awareness UAE,Impressions,September,"67,579,992.00","65,135,943.00","941,966,849.00","704,594,676.59"
-Initiative Cards-Brand Awareness UAE-Impressions-October,Initiative Cards,Brand Awareness UAE,Impressions,October,0,100509704,475053616,819321014.6
-Initiative Cards-Brand Awareness UAE-Impressions-November,Initiative Cards,Brand Awareness UAE,Impressions,November,0,221272026.9,475053616,1040593041
-Initiative Cards-Brand Awareness UAE-Impressions-December,Initiative Cards,Brand Awareness UAE,Impressions,December,0,173455303.2,475053616,1214048345
-Initiative Cards-Brand Awareness UAE-Engagement-January,Initiative Cards,Brand Awareness UAE,Engagement,January,12915819,15675464.91,12915819,15675464.91
-Initiative Cards-Brand Awareness UAE-Engagement-February,Initiative Cards,Brand Awareness UAE,Engagement,February,8857162,9579450.78,21772981,25254915.69
-Initiative Cards-Brand Awareness UAE-Engagement-March,Initiative Cards,Brand Awareness UAE,Engagement,March,10823730,9647123.78,32596711,34902039.47
-Initiative Cards-Brand Awareness UAE-Engagement-April,Initiative Cards,Brand Awareness UAE,Engagement,April,2090207,1607661,34686918,36509700.47
-Initiative Cards-Brand Awareness UAE-Engagement-May,Initiative Cards,Brand Awareness UAE,Engagement,May,11777564,12997996,46464482,49507696.47
-Initiative Cards-Brand Awareness UAE-Engagement-June,Initiative Cards,Brand Awareness UAE,Engagement,June,27934157,18533641,74398639,68041337.47
+Initiative Cards-Brand Awareness UAE-Impressions-October,Initiative Cards,Brand Awareness UAE,Impressions,October,"304,813,577.00","331,017,631.00","1,246,780,426.00","1,035,612,307.59"
+Initiative Cards-Brand Awareness UAE-Impressions-November,Initiative Cards,Brand Awareness UAE,Impressions,November,"433,107,394.00","487,266,564.00","1,679,887,820.00","1,522,878,871.59"
+Initiative Cards-Brand Awareness UAE-Impressions-December,Initiative Cards,Brand Awareness UAE,Impressions,December,"299,788,356.00","280,956,174.00","1,979,676,176.00","1,803,835,045.59"
+Initiative Cards-Brand Awareness UAE-Engagement-January,Initiative Cards,Brand Awareness UAE,Engagement,January,"12,915,819.00","15,675,464.91","12,915,819.00","15,675,464.91"
+Initiative Cards-Brand Awareness UAE-Engagement-February,Initiative Cards,Brand Awareness UAE,Engagement,February,"8,857,162.00","9,579,450.78","21,772,981.00","25,254,915.69"
+Initiative Cards-Brand Awareness UAE-Engagement-March,Initiative Cards,Brand Awareness UAE,Engagement,March,"10,823,730.00","9,647,123.78","32,596,711.00","34,902,039.47"
+Initiative Cards-Brand Awareness UAE-Engagement-April,Initiative Cards,Brand Awareness UAE,Engagement,April,"2,090,207.00","1,607,661.00","34,686,918.00","36,509,700.47"
+Initiative Cards-Brand Awareness UAE-Engagement-May,Initiative Cards,Brand Awareness UAE,Engagement,May,"11,777,564.00","12,997,996.00","46,464,482.00","49,507,696.47"
+Initiative Cards-Brand Awareness UAE-Engagement-June,Initiative Cards,Brand Awareness UAE,Engagement,June,"27,934,157.00","18,533,641.00","74,398,639.00","68,041,337.47"
 Initiative Cards-Brand Awareness UAE-Engagement-July,Initiative Cards,Brand Awareness UAE,Engagement,July,"29,777,213.00","18,533,641.00","104,175,852.00","86,574,978.47"
 Initiative Cards-Brand Awareness UAE-Engagement-August,Initiative Cards,Brand Awareness UAE,Engagement,August,"19,843,909.00","21,526,380.00","124,019,761.00","108,101,358.47"
 Initiative Cards-Brand Awareness UAE-Engagement-September,Initiative Cards,Brand Awareness UAE,Engagement,September,"12,004,104.00","12,181,628.00","136,023,865.00","120,282,986.47"
-Initiative Cards-Brand Awareness UAE-Engagement-October,Initiative Cards,Brand Awareness UAE,Engagement,October,0,8639615,74398639,114446715.5
-Initiative Cards-Brand Awareness UAE-Engagement-November,Initiative Cards,Brand Awareness UAE,Engagement,November,0,27417146.91,74398639,141863862.4
-Initiative Cards-Brand Awareness UAE-Engagement-December,Initiative Cards,Brand Awareness UAE,Engagement,December,0,19111214.61,74398639,160975077
-Initiative Cards-Brand Awareness UAE-Paid Sessions-January,Initiative Cards,Brand Awareness UAE,Paid Sessions,January,96290,84682.57,96290,84682.57
-Initiative Cards-Brand Awareness UAE-Paid Sessions-February,Initiative Cards,Brand Awareness UAE,Paid Sessions,February,97387,115557.72,193677,200240.29
-Initiative Cards-Brand Awareness UAE-Paid Sessions-March,Initiative Cards,Brand Awareness UAE,Paid Sessions,March,186632,183190.72,380309,383431.01
-Initiative Cards-Brand Awareness UAE-Paid Sessions-April,Initiative Cards,Brand Awareness UAE,Paid Sessions,April,102245,80646,482554,464077.01
-Initiative Cards-Brand Awareness UAE-Paid Sessions-May,Initiative Cards,Brand Awareness UAE,Paid Sessions,May,257615,234747,740169,698824.01
-Initiative Cards-Brand Awareness UAE-Paid Sessions-June,Initiative Cards,Brand Awareness UAE,Paid Sessions,June,499833,205884,1240002,904708.01
+Initiative Cards-Brand Awareness UAE-Engagement-October,Initiative Cards,Brand Awareness UAE,Engagement,October,"53,409,775.00","55,055,427.00","189,433,640.00","175,338,413.47"
+Initiative Cards-Brand Awareness UAE-Engagement-November,Initiative Cards,Brand Awareness UAE,Engagement,November,"50,198,695.00","41,807,916.00","239,632,335.00","217,146,329.47"
+Initiative Cards-Brand Awareness UAE-Engagement-December,Initiative Cards,Brand Awareness UAE,Engagement,December,"18,137,682.00","18,111,996.00","257,770,017.00","235,258,325.47"
+Initiative Cards-Brand Awareness UAE-Paid Sessions-January,Initiative Cards,Brand Awareness UAE,Paid Sessions,January,"96,290.00","84,682.57","96,290.00","84,682.57"
+Initiative Cards-Brand Awareness UAE-Paid Sessions-February,Initiative Cards,Brand Awareness UAE,Paid Sessions,February,"97,387.00","115,557.72","193,677.00","200,240.29"
+Initiative Cards-Brand Awareness UAE-Paid Sessions-March,Initiative Cards,Brand Awareness UAE,Paid Sessions,March,"186,632.00","183,190.72","380,309.00","383,431.01"
+Initiative Cards-Brand Awareness UAE-Paid Sessions-April,Initiative Cards,Brand Awareness UAE,Paid Sessions,April,"102,245.00","80,646.00","482,554.00","464,077.01"
+Initiative Cards-Brand Awareness UAE-Paid Sessions-May,Initiative Cards,Brand Awareness UAE,Paid Sessions,May,"257,615.00","234,747.00","740,169.00","698,824.01"
+Initiative Cards-Brand Awareness UAE-Paid Sessions-June,Initiative Cards,Brand Awareness UAE,Paid Sessions,June,"499,833.00","205,884.00","1,240,002.00","904,708.01"
 Initiative Cards-Brand Awareness UAE-Paid Sessions-July,Initiative Cards,Brand Awareness UAE,Paid Sessions,July,"938,757.00","196,382.00","2,178,759.00","1,101,090.01"
 Initiative Cards-Brand Awareness UAE-Paid Sessions-August,Initiative Cards,Brand Awareness UAE,Paid Sessions,August,"642,957.00","174,915.00","2,821,716.00","1,276,005.01"
 Initiative Cards-Brand Awareness UAE-Paid Sessions-September,Initiative Cards,Brand Awareness UAE,Paid Sessions,September,"171,331.00","154,735.00","2,993,047.00","1,430,740.01"
-Initiative Cards-Brand Awareness UAE-Paid Sessions-October,Initiative Cards,Brand Awareness UAE,Paid Sessions,October,0,343561,1240002,1913442.01
-Initiative Cards-Brand Awareness UAE-Paid Sessions-November,Initiative Cards,Brand Awareness UAE,Paid Sessions,November,0,553858.92,1240002,2467300.93
-Initiative Cards-Brand Awareness UAE-Paid Sessions-December,Initiative Cards,Brand Awareness UAE,Paid Sessions,December,0,520807.61,1240002,2988108.54
-Initiative Cards-Brand Awareness T2-Impressions-January,Initiative Cards,Brand Awareness T2,Impressions,January,406501514,492089649.3,406501514,492089649.3
-Initiative Cards-Brand Awareness T2-Impressions-February,Initiative Cards,Brand Awareness T2,Impressions,February,334135141,300721452.4,740636655,792811101.7
-Initiative Cards-Brand Awareness T2-Impressions-March,Initiative Cards,Brand Awareness T2,Impressions,March,447306326,302853203.4,1187942981,1095664305
-Initiative Cards-Brand Awareness T2-Impressions-April,Initiative Cards,Brand Awareness T2,Impressions,April,120873696,109687794,1308816677,1205352099
-Initiative Cards-Brand Awareness T2-Impressions-May,Initiative Cards,Brand Awareness T2,Impressions,May,743728526,718810011,2052545203,1924162110
-Initiative Cards-Brand Awareness T2-Impressions-June,Initiative Cards,Brand Awareness T2,Impressions,June,1309551591,1075931776,3362096794,3000093886
+Initiative Cards-Brand Awareness UAE-Paid Sessions-October,Initiative Cards,Brand Awareness UAE,Paid Sessions,October,"1,069,396.00","784,308.00","4,062,443.00","2,215,048.01"
+Initiative Cards-Brand Awareness UAE-Paid Sessions-November,Initiative Cards,Brand Awareness UAE,Paid Sessions,November,"1,047,268.00","1,192,676.00","5,109,711.00","3,407,724.01"
+Initiative Cards-Brand Awareness UAE-Paid Sessions-December,Initiative Cards,Brand Awareness UAE,Paid Sessions,December,"832,578.00","991,899.00","5,942,289.00","4,399,623.01"
+Initiative Cards-Brand Awareness T2-Impressions-January,Initiative Cards,Brand Awareness T2,Impressions,January,"406,501,514.00","492,089,649.30","406,501,514.00","492,089,649.30"
+Initiative Cards-Brand Awareness T2-Impressions-February,Initiative Cards,Brand Awareness T2,Impressions,February,"334,135,141.00","300,721,452.40","740,636,655.00","792,811,101.70"
+Initiative Cards-Brand Awareness T2-Impressions-March,Initiative Cards,Brand Awareness T2,Impressions,March,"447,306,326.00","302,853,203.40","1,187,942,981.00","1,095,664,305.10"
+Initiative Cards-Brand Awareness T2-Impressions-April,Initiative Cards,Brand Awareness T2,Impressions,April,"120,873,696.00","109,687,794.00","1,308,816,677.00","1,205,352,099.10"
+Initiative Cards-Brand Awareness T2-Impressions-May,Initiative Cards,Brand Awareness T2,Impressions,May,"743,728,526.00","718,810,011.00","2,052,545,203.00","1,924,162,110.10"
+Initiative Cards-Brand Awareness T2-Impressions-June,Initiative Cards,Brand Awareness T2,Impressions,June,"1,309,551,591.00","1,075,931,776.00","3,362,096,794.00","3,000,093,886.10"
 Initiative Cards-Brand Awareness T2-Impressions-July,Initiative Cards,Brand Awareness T2,Impressions,July,"1,099,342,641.00","781,936,026.00","4,461,439,435.00","3,782,029,912.10"
 Initiative Cards-Brand Awareness T2-Impressions-August,Initiative Cards,Brand Awareness T2,Impressions,August,"1,113,341,221.00","638,101,343.00","5,574,780,656.00","4,420,131,255.10"
 Initiative Cards-Brand Awareness T2-Impressions-September,Initiative Cards,Brand Awareness T2,Impressions,September,"309,848,192.00","335,272,207.00","5,884,628,848.00","4,755,403,462.10"
-Initiative Cards-Brand Awareness T2-Impressions-October,Initiative Cards,Brand Awareness T2,Impressions,October,0,450313729,3362096794,5323725853
-Initiative Cards-Brand Awareness T2-Impressions-November,Initiative Cards,Brand Awareness T2,Impressions,November,0,1237551850,3362096794,6561277703
-Initiative Cards-Brand Awareness T2-Impressions-December,Initiative Cards,Brand Awareness T2,Impressions,December,0,928439729,3362096794,7489717432
-Initiative Cards-Brand Awareness T2-Engagement-January,Initiative Cards,Brand Awareness T2,Engagement,January,90260920,91574132.85,90260920,91574132.85
-Initiative Cards-Brand Awareness T2-Engagement-February,Initiative Cards,Brand Awareness T2,Engagement,February,71535807,55961970.08,161796727,147536102.9
-Initiative Cards-Brand Awareness T2-Engagement-March,Initiative Cards,Brand Awareness T2,Engagement,March,74682965,56040586.08,236479692,203576689
-Initiative Cards-Brand Awareness T2-Engagement-April,Initiative Cards,Brand Awareness T2,Engagement,April,28403456,21950923,264883148,225527612
-Initiative Cards-Brand Awareness T2-Engagement-May,Initiative Cards,Brand Awareness T2,Engagement,May,142163913,139695096,407047061,365222708
-Initiative Cards-Brand Awareness T2-Engagement-June,Initiative Cards,Brand Awareness T2,Engagement,June,228996934,139889227,636043995,505111935
+Initiative Cards-Brand Awareness T2-Impressions-October,Initiative Cards,Brand Awareness T2,Impressions,October,"1,124,584,925.00","1,070,369,616.00","7,009,213,773.00","5,825,773,078.10"
+Initiative Cards-Brand Awareness T2-Impressions-November,Initiative Cards,Brand Awareness T2,Impressions,November,"1,352,342,474.00","1,322,371,435.00","8,361,556,247.00","7,148,144,513.10"
+Initiative Cards-Brand Awareness T2-Impressions-December,Initiative Cards,Brand Awareness T2,Impressions,December,"876,157,750.00","881,601,851.00","9,237,713,997.00","8,029,746,364.10"
+Initiative Cards-Brand Awareness T2-Engagement-January,Initiative Cards,Brand Awareness T2,Engagement,January,"90,260,920.00","91,574,132.85","90,260,920.00","91,574,132.85"
+Initiative Cards-Brand Awareness T2-Engagement-February,Initiative Cards,Brand Awareness T2,Engagement,February,"71,535,807.00","55,961,970.08","161,796,727.00","147,536,102.93"
+Initiative Cards-Brand Awareness T2-Engagement-March,Initiative Cards,Brand Awareness T2,Engagement,March,"74,682,965.00","56,040,586.08","236,479,692.00","203,576,689.01"
+Initiative Cards-Brand Awareness T2-Engagement-April,Initiative Cards,Brand Awareness T2,Engagement,April,"28,403,456.00","21,950,923.00","264,883,148.00","225,527,612.01"
+Initiative Cards-Brand Awareness T2-Engagement-May,Initiative Cards,Brand Awareness T2,Engagement,May,"142,163,913.00","139,695,096.00","407,047,061.00","365,222,708.01"
+Initiative Cards-Brand Awareness T2-Engagement-June,Initiative Cards,Brand Awareness T2,Engagement,June,"228,996,934.00","139,889,227.00","636,043,995.00","505,111,935.01"
 Initiative Cards-Brand Awareness T2-Engagement-July,Initiative Cards,Brand Awareness T2,Engagement,July,"160,881,673.00","106,212,115.00","796,925,668.00","611,324,050.01"
 Initiative Cards-Brand Awareness T2-Engagement-August,Initiative Cards,Brand Awareness T2,Engagement,August,"133,683,869.00","96,280,472.00","930,609,537.00","707,604,522.01"
 Initiative Cards-Brand Awareness T2-Engagement-September,Initiative Cards,Brand Awareness T2,Engagement,September,"47,048,696.00","55,131,708.00","977,658,233.00","762,736,230.01"
-Initiative Cards-Brand Awareness T2-Engagement-October,Initiative Cards,Brand Awareness T2,Engagement,October,0,43646976,636043995,790035126
-Initiative Cards-Brand Awareness T2-Engagement-November,Initiative Cards,Brand Awareness T2,Engagement,November,0,254073102,636043995,1044108228
-Initiative Cards-Brand Awareness T2-Engagement-December,Initiative Cards,Brand Awareness T2,Engagement,December,0,174011129,636043995,1218119357
-Initiative Cards-Brand Awareness T2-Paid Sessions-January,Initiative Cards,Brand Awareness T2,Paid Sessions,January,869432,758197,869432,758197
-Initiative Cards-Brand Awareness T2-Paid Sessions-February,Initiative Cards,Brand Awareness T2,Paid Sessions,February,838453,1034634,1707885,1792831
-Initiative Cards-Brand Awareness T2-Paid Sessions-March,Initiative Cards,Brand Awareness T2,Paid Sessions,March,1279519,1111115,2987404,2903946
-Initiative Cards-Brand Awareness T2-Paid Sessions-April,Initiative Cards,Brand Awareness T2,Paid Sessions,April,212079,129867,3199483,3033813
-Initiative Cards-Brand Awareness T2-Paid Sessions-May,Initiative Cards,Brand Awareness T2,Paid Sessions,May,1302610,656595,4502093,3690408
-Initiative Cards-Brand Awareness T2-Paid Sessions-June,Initiative Cards,Brand Awareness T2,Paid Sessions,June,8919190,3328052,13421283,7018460
+Initiative Cards-Brand Awareness T2-Engagement-October,Initiative Cards,Brand Awareness T2,Engagement,October,"178,418,791.00","159,310,880.00","1,156,077,024.00","922,047,110.01"
+Initiative Cards-Brand Awareness T2-Engagement-November,Initiative Cards,Brand Awareness T2,Engagement,November,"233,975,203.00","253,898,847.00","1,390,052,227.00","1,175,945,957.01"
+Initiative Cards-Brand Awareness T2-Engagement-December,Initiative Cards,Brand Awareness T2,Engagement,December,"102,810,771.00","100,734,221.00","1,492,862,998.00","1,276,680,178.01"
+Initiative Cards-Brand Awareness T2-Paid Sessions-January,Initiative Cards,Brand Awareness T2,Paid Sessions,January,"869,432.00","758,197.00","869,432.00","758,197.00"
+Initiative Cards-Brand Awareness T2-Paid Sessions-February,Initiative Cards,Brand Awareness T2,Paid Sessions,February,"838,453.00","1,034,634.00","1,707,885.00","1,792,831.00"
+Initiative Cards-Brand Awareness T2-Paid Sessions-March,Initiative Cards,Brand Awareness T2,Paid Sessions,March,"1,279,519.00","1,111,115.00","2,987,404.00","2,903,946.00"
+Initiative Cards-Brand Awareness T2-Paid Sessions-April,Initiative Cards,Brand Awareness T2,Paid Sessions,April,"212,079.00","129,867.00","3,199,483.00","3,033,813.00"
+Initiative Cards-Brand Awareness T2-Paid Sessions-May,Initiative Cards,Brand Awareness T2,Paid Sessions,May,"1,302,610.00","656,595.00","4,502,093.00","3,690,408.00"
+Initiative Cards-Brand Awareness T2-Paid Sessions-June,Initiative Cards,Brand Awareness T2,Paid Sessions,June,"8,919,190.00","3,328,052.00","13,421,283.00","7,018,460.00"
 Initiative Cards-Brand Awareness T2-Paid Sessions-July,Initiative Cards,Brand Awareness T2,Paid Sessions,July,"7,090,822.00","2,501,176.00","20,512,105.00","9,519,636.00"
 Initiative Cards-Brand Awareness T2-Paid Sessions-August,Initiative Cards,Brand Awareness T2,Paid Sessions,August,"4,628,998.00","1,690,173.00","25,141,103.00","11,209,809.00"
 Initiative Cards-Brand Awareness T2-Paid Sessions-September,Initiative Cards,Brand Awareness T2,Paid Sessions,September,"858,238.00","702,543.00","25,999,341.00","11,912,352.00"
-Initiative Cards-Brand Awareness T2-Paid Sessions-October,Initiative Cards,Brand Awareness T2,Paid Sessions,October,0,2104633,13421283,15260098
-Initiative Cards-Brand Awareness T2-Paid Sessions-November,Initiative Cards,Brand Awareness T2,Paid Sessions,November,0,3165400,13421283,18425498
-Initiative Cards-Brand Awareness T2-Paid Sessions-December,Initiative Cards,Brand Awareness T2,Paid Sessions,December,0,2893587,13421283,21319085`;
+Initiative Cards-Brand Awareness T2-Paid Sessions-October,Initiative Cards,Brand Awareness T2,Paid Sessions,October,"4,403,574.00","3,423,128.00","30,402,915.00","15,335,480.00"
+Initiative Cards-Brand Awareness T2-Paid Sessions-November,Initiative Cards,Brand Awareness T2,Paid Sessions,November,"4,121,426.00","4,426,351.00","34,524,341.00","19,761,831.00"
+Initiative Cards-Brand Awareness T2-Paid Sessions-December,Initiative Cards,Brand Awareness T2,Paid Sessions,December,"5,039,435.00","5,367,091.00","39,563,776.00","25,128,922.00"`;
+        
+        // Initialize dashboard with embedded CSV data
+        window.addEventListener('load', function() {
+            console.log('Page loaded, initializing dashboard...');
+            try {
+                if (window.dashboardFunctions && typeof window.dashboardFunctions.initializeDashboard === 'function') {
+                    window.dashboardFunctions.initializeDashboard(csvData);
+                    console.log('Dashboard initialized successfully');
+                } else {
+                    console.error('Dashboard functions not available');
+                    document.getElementById('metrics-container').innerHTML = `
+                        <div class="metric-card">
+                            <div class="metric-name"><i class="fas fa-exclamation-triangle"></i> Error</div>
+                            <div class="metric-value">Dashboard functions not available</div>
+                            <div class="metric-stats">
+                                <div class="metric-stat">
+                                    <span class="stat-label">Please check if Brand Awareness.js is loaded correctly.</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error initializing dashboard:', error);
+                document.getElementById('metrics-container').innerHTML = `
+                    <div class="metric-card">
+                        <div class="metric-name"><i class="fas fa-exclamation-triangle"></i> Error</div>
+                        <div class="metric-value">Failed to initialize dashboard</div>
+                        <div class="metric-stats">
+                            <div class="metric-stat">
+                                <span class="stat-label">Please try again later or contact support.</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        });
     </script>
     
     <!-- Tab functionality -->
@@ -1050,44 +1087,6 @@ Initiative Cards-Brand Awareness T2-Paid Sessions-December,Initiative Cards,Bran
     <script src="createCharts.js"></script>
     <script src="collapsible.js"></script>
     
-    <!-- Initialize dashboard -->
-    <script>
-        // Wait for the page to load and then initialize the dashboard
-        window.addEventListener('load', function() {
-            console.log('Page loaded, initializing dashboard...');
-            try {
-                if (window.dashboardFunctions && typeof window.dashboardFunctions.initializeDashboard === 'function') {
-                    window.dashboardFunctions.initializeDashboard(csvData);
-                    console.log('Dashboard initialized successfully');
-                } else {
-                    console.error('Dashboard functions not available');
-                    document.getElementById('metrics-container').innerHTML = `
-                        <div class="metric-card">
-                            <div class="metric-name"><i class="fas fa-exclamation-triangle"></i> Error</div>
-                            <div class="metric-value">Dashboard functions not available</div>
-                            <div class="metric-stats">
-                                <div class="metric-stat">
-                                    <span class="stat-label">Please check if Brand Awareness.js is loaded correctly.</span>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }
-            } catch (error) {
-                console.error('Error initializing dashboard:', error);
-                document.getElementById('metrics-container').innerHTML = `
-                    <div class="metric-card">
-                        <div class="metric-name"><i class="fas fa-exclamation-triangle"></i> Error</div>
-                        <div class="metric-value">Failed to initialize dashboard</div>
-                        <div class="metric-stats">
-                            <div class="metric-stat">
-                                <span class="stat-label">Please try again later or contact support.</span>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-        });
-    </script>
+    <!-- Dashboard initialization is handled in the CSV data script above -->
 </body>
 </html>
